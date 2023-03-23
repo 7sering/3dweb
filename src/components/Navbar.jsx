@@ -26,7 +26,7 @@ const Navbar = () => {
             <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
             <p className="text-white text-[18px] font-bold  cursor-pointer flex">
               Dev.Sherpa &nbsp;
-              <span className="sm:block hidden">|&nbsp; Blockchain Developer</span>
+              <span className="sm:block hidden">|&nbsp; Blockchain</span>
             </p>
           </Link>
           <ul className="list-none hidden sm:flex flex-row gap-10">
@@ -35,7 +35,7 @@ const Navbar = () => {
                 key={link.id}
                 className={`${
                   active === link.title ? "text-white" : "text-secondary "
-                } hover:text-white text-[18px] font-medium cursor-pointer`}
+                } hover:text-white text-[16px] font-medium cursor-pointer`}
                 onClick={() => setActive(link.title)}
               >
                 <a href={`#${link.id}`}>{link.title}</a>
