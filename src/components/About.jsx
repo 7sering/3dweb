@@ -1,6 +1,7 @@
 import Tilt from "react-tilt"
 import {motion} from 'framer-motion'
 
+import SectionWrapper from "../hoc/SectionWrapper"
 import { styles} from "../style"
 import {services} from "../constants"
 import {fadeIn, textVariant} from '../utils/motion'
@@ -48,4 +49,5 @@ Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint perferendis delec
   )
 }
 
-export default About
+
+export default SectionWrapper(About, "about");
